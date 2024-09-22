@@ -1,38 +1,39 @@
 #include <iostream>
 using namespace std;
 
-const int PRICE_OF_ORANGE = 5;
-const int PRICE_OF_LEMON = 6;
-
-int getTotalCost(int price, int quantity) {
-	return price * quantity;
-}
-
-int getTotalCurrent(int current, int cost) {
-	return current * cost;
-}
-
 int main() {
-	int userNumber, totalMoney, numCurrent, totalCurrent;
-	string name;
-	
-	cout << "Enter your name: \t\t\t ";
-	getline(cin, name);
+    /* Declare price of orange and lemon */
+    int priceOfOrange = 5, priceOfLemon = 6; // Prices in dollars
+    int userNumber, totalMoney, numCurrent, totalCurrent; // Variables for user input and calculations
+    string nickname; // Variable for the user's nickname
 
-	cout << "Price of Orange: \t\t\t $" << PRICE_OF_ORANGE << endl;
-	cout << "Price of Lemon: \t\t\t $" << PRICE_OF_LEMON << endl;
-	cout << "Enter # of orange you want: \t\t ";
-	cin >> userNumber;
-	totalMoney = getTotalCost(PRICE_OF_ORANGE, userNumber);
+    cout << "Enter your nickname: \t\t\t ";
+    cin >> nickname; // User input for nickname
 
-	cout << "Enter # of lemon you want: \t\t ";
-	cin >> userNumber;
-	totalMoney += getTotalCost(PRICE_OF_LEMON, userNumber);
-	
-	cout << "Enter the current(1$ = Php): \t\t ";
-	cin >> numCurrent;
-	totalCurrent = getTotalCurrent(numCurrent, totalMoney);
+    cout << "Price of Orange: \t\t\t $" << priceOfOrange << endl; // Display price of orange
+    cout << "Price of Lemon: \t\t\t $" << priceOfLemon << endl; // Display price of lemon
 
-	cout << "Total Amount to pay:\t\t  Php " << totalCurrent << endl;
-	return 0;
+    cout << "Enter # of oranges you want: \t\t ";
+    cin >> userNumber; // User input for the number of oranges
+
+    /* Calculate the total cost of oranges */
+    totalMoney = priceOfOrange * userNumber; // Total cost for oranges
+
+    cout << "Enter # of lemons you want: \t\t "; // Note: Change 'lemon' to 'lemons' for grammatical consistency
+    cin >> userNumber; // User input for the number of lemons
+
+    /* Add the total cost for lemons to the total cost of oranges */
+    totalMoney += priceOfLemon * userNumber; // Update total cost
+
+    cout << "Enter the current ($ = Php): \t\t ";
+    cin >> numCurrent; // User input for exchange rate
+
+    /* Calculate the total amount in local currency */
+    totalCurrent = numCurrent * totalMoney; // Total amount in Philippine pesos
+
+    /* Display the total amount to pay */
+    cout << "Total amount to pay:\t\t    Php " << totalCurrent << endl; // Output the total cost
+
+    return 0;
 }
+
