@@ -9,8 +9,10 @@ int main() {
     cin >> a >> b >> c; // User input for three numbers
 
     // Use a ternary operator to find the largest number
-    int result = (a >= b && a >= c) ? a : (b >= c ? b : c); // Determine the largest number
+    string result = a >= b && a >= c ? to_string(a) + " is a largest" :
+	   	    b >= c ? to_string(b) + " is a largest": 
+		    to_string(c) + " is a largest"; // Determine the largest number
 
-    cout << "The largest number is: " << result << endl; // Display the result
+    cout << result << endl; // Display the result
     return 0;
 }
