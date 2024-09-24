@@ -19,7 +19,7 @@ int main() {
     /* Calculate the total cost of oranges */
     totalMoney = priceOfOrange * userNumber; // Total cost for oranges
 
-    cout << "Enter # of lemons you want: \t\t "; // Note: Change 'lemon' to 'lemons' for grammatical consistency
+    cout << "Enter # of lemons you want: \t\t ";
     cin >> userNumber; // User input for the number of lemons
 
     /* Add the total cost for lemons to the total cost of oranges */
