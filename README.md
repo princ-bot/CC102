@@ -15,4 +15,4 @@ This repository contains various school activities and coding exercises related 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/princ-bot/My-School-Activities.git
+   git clone https://github.com/princ-bot/school-activity.git
