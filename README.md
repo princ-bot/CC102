@@ -9,6 +9,8 @@ This repository contains various school activities and coding exercises related 
 
 2. **Find the Largest Program** (`findtheLargest/activity.cpp`)
    - A program that takes multiple numbers as input and finds the largest among them.
+3. **Php to USD and USD to Php progra,** ('currencyconverter.main.cpp)
+   - A program that convert Php to USD and USD to Php based on user input.
 
  - For Upcoming 1st year hehe
 ## How to Run
