@@ -4,7 +4,7 @@ This repository contains various school activities and coding exercises related 
 
 ## Activities
 
-1. **Orange and Lemon Program** (`orangeandlemon/main.cpp`)
+1. **Orange and Lemon Program** (`orangeandLemon/main.cpp`)
    - A simple program that calculates the total cost of oranges and lemons based on user input.
 
 2. **Find the Largest Program** (`findtheLargest/main.cpp`)
