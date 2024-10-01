@@ -13,10 +13,8 @@ int main() {
 	string user;
 	float userInput;
 	float totalCurrency;
-	
 	cout << "1. Php to USD\n" << "2. USD to Php\n" << "3. Exit\n";
 	cin >> user;
-
 	if (user == "1") {
 		cout << "Enter the amount: ";
 		cin >> userInput;
