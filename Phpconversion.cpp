@@ -11,6 +11,7 @@ float converter(float currency, float amount) {
 
 int main() {
 	string user;
+	char yesorno;
 	float userInput;
 	float totalCurrency;
 	
@@ -18,20 +19,27 @@ int main() {
 	cin >> user;
 
 	if (user == "1") {
-		cout << "Enter the amount: ";
-		cin >> userInput;
-		totalCurrency = converter(Php_CURRENCY, userInput);
-		cout << "USD = " << totalCurrency << endl;
+		do {
+			cout << "Enter the amount: ";
+			cin >> userInput;
+			totalCurrency = converter(Php_CURRENCY, userInput);
+			cout << "USD = " << totalCurrency << endl;
+			cout << "More? (y/n): ";
+			cin >> yesorno;
+		} while (yesorno == 'y');
 	}else if (user == "2") {
-		cout << "Enter the amount: ";
-		cin >> userInput;
-		totalCurrency = converter(USD_CURRENCY, userInput);
-		cout << "Php = " << totalCurrency << endl;
+		do {
+			cout << "Enter the amount: ";
+			cin >> userInput;
+			totalCurrency = converter(USD_CURRENCY, userInput);
+			cout << "Php = " << totalCurrency << endl;
+			cout << "More? (y/n): ";
+			cin >> yesorno;
+		} while(yesorno == 'y');
 	}else {
 		cout << "Exit!\n";
 		return 0;
 	}
-
 	return 0;
 }
 
