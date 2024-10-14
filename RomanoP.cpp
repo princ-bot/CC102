@@ -44,18 +44,18 @@ int main() {
 	cin >> usdToPhp;
 	cout << "Pound to Php: ";
 	cin >> poundToPhp;
-	sugarCostPHP = sugarQty * sugarPriceUSD;
-	coffeeCostPHP = coffeeQty * coffeePriceUSD;
-	milkCostPHP = milkQtyt * milkPriceUSD;
-	riceCostPHP = riceQty * ricePricePound;
-	sardinesCostPHP = sardineQty * sardinesPricePound;
+	sugarCostPHP = (sugarQty * sugarPriceUSD) * usdToPhp;
+	coffeeCostPHP = (coffeeQty * coffeePriceUSD) * usdToPhp;
+	milkCostPHP = (milkQtyt * milkPriceUSD) * usdToPhp;
+	riceCostPHP = (riceQty * ricePricePound) * poundToPhp;
+	sardinesCostPHP = (sardineQty * sardinesPricePound) * poundToPhp;
 	cout << "Total Cost per item in PHP\n";
 	cout << "Sugar: " << sugarCostPHP << "\n";
 	cout << "Rice: " << riceCostPHP << "\n";
 	cout << "Sardine: " << sardinesCostPHP << "\n";
 	cout << "Coffee: " << coffeeCostPHP << "\n";
 	cout << "Milk: " <<  milkCostPHP << "\n";
-	totalCostPHP = (sugarCostPHP * usdToPhp) + (riceCostPHP * poundToPhp) + (sardinesCostPHP * poundToPhp) + (coffeeCostPHP * usdToPhp) + (milkCostPHP * usdToPhp);
+	totalCostPHP = sugarCostPHP + riceCostPHP  + sardinesCostPHP + coffeeCostPHP + milkCostPHP;
 	cout << "Total Cost in Php: " << totalCostPHP;
 	return 0;
 }
