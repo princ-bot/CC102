@@ -1,2 +1,1 @@
-** Activities and Exams **
-and some of my activity
+** DON'T README **
