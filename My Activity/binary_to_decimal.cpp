@@ -16,6 +16,5 @@ int main() {
 	 128 64  32   16  8   4   2   1
 	     64                       1
 
-	 binary_Result = 64 + 1 = 65 in decimal which is capital A
-	 using (char)decimal, to convert decimal to character
+	 
  */
