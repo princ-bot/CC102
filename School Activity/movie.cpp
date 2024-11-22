@@ -4,9 +4,10 @@ using namespace std;
 int main() {
 	int age;
 	float money;
-	string parent;
+	string with_parent;
 	cout << "Enter age: ";
 	cin >> age;
-	cout << (age <= 13 ? (cout << "With parent? ", cin >> parent, parent == "yes" ? "G, PG" : "G") : age >= 13 && age <= 16 ? (cout << "With parent? ", cin >> parent, parent == "yes" ? "G, PG, R" : "G, PG") : age >= 16 ? "G, PG, R", (cout << "Enter amoung of money: ", cin >> money, money <= 7.50 ? "Matinee." : money >= 7.50 ? "Evening" : 0) : 0);
+	cout << (age <= 13 ? (cout << "With parent? ", cin >> parent, parent == "yes" ? "G, PG\n" : "G\n") : age >= 13 && age <= 16 ? (cout << "With parent? ", cin >> parent, parent == "yes" ? "G, PG, R\n" : "G, PG\n") : age >= 16 ? "G, PG, R\n" : 0);
+	cout << (cout << "Enter amoung of money: ", cin >> money, money <= 7.50 ? "Matinee." : money >= 7.50 ? "Evening" : 0);
 	return 0;
 }
