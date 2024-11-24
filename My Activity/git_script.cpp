@@ -53,7 +53,7 @@ int main() {
             try {
                 run_command("git rm -r " + file_name);
                 run_command("git commit -m \"" + commit_message + "\"");
-                run_command("git push -u pr main");
+                run_command("git push -u replace main");
                 cout << "File Deleted Successfully...";
             } catch (const exception& e) {
                 cerr << "Error.. " << e.what() << endl;
