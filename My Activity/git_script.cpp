@@ -38,7 +38,7 @@ int main() {
             try {
                 run_command("git add " + file_name);
                 run_command("git commit -m \"" + commit_message + "\"");
-                run_command("git push pr main"); // Replace with your remote name and branch name ("git push [remote name] [branch name]")
+                run_command("git push replace main"); // Replace with your remote name and branch name ("git push [remote name] [branch name]")
                 cout << "Upload Completed..." << endl;
             } catch (const exception& e) {
                 cerr << "Error..." << e.what() << endl;
