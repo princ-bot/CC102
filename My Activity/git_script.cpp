@@ -18,13 +18,13 @@ int main() {
         int user_choices;
 
         cout << "====== Welcome to Git Command Automation ===== " << endl;
-        cout << "1. Pull Request\n" << "2. Upload\n" << "3. Delete\n" << "4. Exit\n";
+        cout << "1. Pull Request\n" << "2. Upload\n" << "3. Delete\n" << "4. Exit\n" << "choose: ";
         cin >> user_choices;
         cin.ignore();
 
         if (user_choices == 1) {
             try {
-                run_command("git pull pr main");
+                run_command("git pull replace main"); // Replace it with your remote name and branch name (git pull [remote name] [branch name])
             } catch (const exception& e) {
                 cerr << "Eror... " << e.what() << endl;
             }
