@@ -43,7 +43,7 @@ int main() {
             } catch (const exception& e) {
                 cerr << "Error..." << e.what() << endl;
             }
-        } else {
+        } else if (user_choices == 3) {
             string file_name;
             string commit_message;
             cout << "Enter Filename to delete: ";
@@ -58,6 +58,8 @@ int main() {
             } catch (const exception& e) {
                 cerr << "Error.. " << e.what() << endl;
             }
+        } else {
+            return 0;
         }
     }
     return 0;
