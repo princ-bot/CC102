@@ -3,16 +3,18 @@
 using namespace std;
 
 int main() {
-	int max_number = 10;
+	int number;
+	cout << "Enter Number: ";
+	cin >> numbers;
 	cout << setw(4) << " ";
-	for (int i = 1; i <= max_number; i++) {
+	for (int i = 1; i <= numbers; i++) {
 		cout << setw(4) << i;
 	}
 	cout << endl;
 
-	for (int i = 1; i <= max_number; ++i) {
+	for (int i = 1; i <= numbers; ++i) {
 		cout << setw(4) << i;
-		for (int j = 1; j <= max_number; ++j) {
+		for (int j = 1; j <= numbers; ++j) {
 			cout << setw(4) << i * j;
 		}
 		cout << endl;
