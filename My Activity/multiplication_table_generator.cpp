@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	int number;
+	int numbers;
 	cout << "Enter Number: ";
 	cin >> numbers;
 	cout << setw(4) << " ";
